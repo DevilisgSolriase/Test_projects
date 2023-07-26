@@ -16,7 +16,9 @@
                 <a href="#hero">E-Shop</a>
             </h1>
             <div class=" w-auto flex justify-center items-center basis-3/5 gap-6">
-                <input type="text" placeholder=" Search..." class="rounded-full text-black">
+                <div class="bg-white rounded-lg w-3/6 border-solid border-black text-center">
+                    <input type="text" placeholder="Search..." class="outline-0 w-auto h-full text-black indent-4 align-middle">
+                </div>
                 <button i="search" type="button" class="bg-cyan-700 rounded-full shadow-md text-3xl text-white w-10 h-full p-2 text-center hover:bg-cyan-900 hover:opacity-90">
                     <svg
                         width="24"
@@ -42,9 +44,9 @@
     <main class="mx-w-4xl mx-auto">
         <section id="hero" class="w-full min-h-32 felx-row justify-center items-center p-4 mt-8 scroll-mt-12">
             <article class="text-center">
-                <h2 class="text-4xl text-center font-bold text-white w-4/6 mx-auto">
+                <h1 class="text-4xl text-center font-bold text-white w-4/6 mx-auto">
                     Welcome to E-Shop, where your online shopping exprience will be like no other!
-                </h2>
+                </h1>
                 <p class="text-3xl text-center text-gray-400 font-bold w-1/2 mx-auto p-8">
                     This website aims to make online shopping easier, faster and much more enjoyable for you!
                 </p>
@@ -55,7 +57,7 @@
             <h2 class="text-center text-3xl font-bold text-white">
                 Categories
             </h2>
-            <ul class="list-none mx-auto my-12 flex flex-row justify-center items-center gap-8">
+            <ul class="list-none mx-auto my-12 flex flex-row justify-center items-center gap-8 overflow-hidden">
                 <li id="men" class=" flex-row-reverse w-1/12 bg-sky-500 text-center text-3xl rounded-md shadow-sm border border-solid border-sky-600 py-6">
                     <h3 class="text-2xl text-center font-bold">
                         Men
@@ -95,67 +97,20 @@
             </ul>
         </section>
         <hr class="bg-white w-1/3 mx-auto">
-        <section class="w-full min-h-32 felx-row justify-center items-center p-4 mt-4">
+        <section id="listings" class=" w-full min-h-32 felx-row justify-center items-center p-4 mt-4">
             <h2 class="text-3xl text-white font-bold text-center">
                 Some items...
             </h2>
             <section class="w-3/4 flex flex-row justify-center items-center gap-5 mx-auto">
                 <button class="text-center text-4xl text-white font-bold hover:text-gray-500"><</button>
-                <ul class="list-none mx-auto my-12 flex flex-row justify-center items-center gap-8">
-                    <li class=" w-40 h-40 flex flex-col justify-center items-center p-6 bg-sky-500 rounded-md shadow-sm">
-                        <div class="w-full h-28 rounded-md">
-                            <img src="./Prod-img/images (2).jpeg">
-                        </div>
-                        <h2 class="text-center text-white text-2xl font-bold">
-                            Price $$
-                        </h2>
-                    </li>
-                    <li class=" w-40 h-40 flex flex-col justify-center items-center p-6 bg-sky-500 rounded-md shadow-sm">
-                        <div class="w-full h-28 rounded-md">
-                            <img src="./Prod-img/images (3).jpeg">
-                        </div>
-                        <h2 class="text-center text-white text-2xl font-bold">
-                            Price $$
-                        </h2>
-                    </li>
-                    <li class=" w-40 h-40 flex flex-col justify-center items-center p-6 bg-sky-500 rounded-md shadow-sm">
-                        <div class="w-full h-28 rounded-md">
-                            <img src="./Prod-img/images (4).jpeg">
-                        </div>
-                        <h2 class="text-center text-white text-2xl font-bold">
-                            Price $$
-                        </h2>
-                    </li>
-                    <li class=" w-40 h-40 flex flex-col justify-center items-center p-6 bg-sky-500 rounded-md shadow-sm">
-                        <div class="w-full h-28 rounded-md">
-                            <img src="./Prod-img/images.jpeg">
-                        </div>
-                        <h2 class="text-center text-white text-2xl font-bold">
-                            Price $$
-                        </h2>
-                    </li>
-                    <li class=" w-40 h-40 flex flex-col justify-center items-center p-6 bg-sky-500 rounded-md shadow-sm">
-                        <div class="w-full h-28 rounded-md">
-                            <img src="./Prod-img/images.png">
-                        </div>
-                        <h2 class="text-center text-white text-2xl font-bold">
-                            Price $$
-                        </h2>
-                    </li>
-                    <li class=" w-40 h-40 flex flex-col justify-center items-center p-6 bg-sky-500 rounded-md shadow-sm">
-                        <div class="w-full h-28 rounded-md">
-                            <img src="./Prod-img/images (1).jpeg">
-                        </div>
-                        <h2 class="text-center text-white text-2xl font-bold">
-                            Price $$
-                        </h2>
-                    </li>
+                <ul id="items" class="list-none mx-auto my-12 flex flex-row justify-center items-center gap-8">
+                    
                 </ul>
                 <button class="text-center text-4xl text-white font-bold hover:text-gray-500">></button>
             </section>
         </section>
         <hr class="bg-white w-1/3 mx-auto">
-        <section class="w-2/3 gap-8 flex-row justify-center items-center mx-auto p-4 mt-4">
+        <section class="w-full min-h-32 felx-row justify-center items-center p-4 mt-4">
             <h2 class="text-center text-white text-3xl font-bold">
                 Some of our companies
             </h2>
@@ -214,7 +169,7 @@
                 <button class="text-center text-4xl text-white font-bold hover:text-gray-500">></button>
             </section>
         </section>
-        <section class="bg-cyan-600 w-full h-80 flex flex-row justify-around items-center p-8 mt-8">
+        <section class="bg-cyan-600 w-full max-h-36 flex flex-row justify-around items-center p-8 mt-8">
             <h5 class="text-center text-sm text-gray-400 w-32">
                 This is a bunch of legal stuff it will be filled with bullshit and nthn relevent blah blah blah...
             </h5>
@@ -222,4 +177,20 @@
         </section>
     </main>
 </body>
+<script>
+    var items=document.getElementById("items")
+    var string=""
+    var data= `<li class=" w-40 h-40 flex flex-col justify-center items-center p-6 bg-sky-500 rounded-md shadow-sm">
+        <div class="w-full h-28 rounded-md">
+            <img src="./Prod-img/images (1).jpeg">
+        </div>
+        <h2 class="text-center text-white text-2xl font-bold">
+            Price $$
+        </h2>
+    </li>`
+    for(i=0;i<6;i++){
+        string=string+data;
+    }
+    document.getElementById("items").innerHTML=string
+</script>
 </html>
