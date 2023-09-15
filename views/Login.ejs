@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class=" scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class=" bg-slate-800 min-w-full min-h-full">
+    <header class=" h-14 min-w-full flex justify-between items-center bg-cyan-600 shadow-lg">
+        <div class="w-full h-full text-center my-auto">
+            <h1 class="text-4xl text-white font-bold">E-shop</h1>
+        </div>
+    </header>
+    <div class="p-8">
+        <article class="text-md text-center text-gray-500 font-bold">
+            Welcome to an exprience like no other!
+        </article>
+    </div>
+    <div class="mx-auto mt-4 static h-96 w-60 bg-sky-800 flex justify-center items-center rounded-xl shadow-2xl">
+        <section class="w-full h-11/12 p-2 gap-3 flex-col justify-center items-center rounded-xl">
+            <h2 class="text-left text-3xl font-bold text-white p-2">Login</h2>
+            <form>
+                <p class="text-center text-md text-gray-400 mt-3">
+                    Please enter your E-mail and Password.
+                </p>
+                <h3 class="text-md text-white font-bold">Email: </h3>
+                <div class="mt-4 bg-white border-solid border-black text-center rounded-md h-6">
+                    <input type="email" class="w-auto text-sm font-bold outline-0" placeholder="example@mail.com">
+                </div>
+                <h3 class="text-md text-white font-bold mt-2">Password: </h3>
+
+                <div class="mt-4 bg-white border-spacing-1 border-black text-center rounded-md">                
+                    <input id="password" type="password" class="w-10/12 text-sm font-bold outline-0" placeholder="Password">
+                    <button id="make_visibile" type="button" class="active:bg-slate-400 w-auto h-auto text-center"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z"/></svg></button>  
+                </div>
+                <div class="mt-8 text-center">
+                    <button type="button" class="rounded-md bg-sky-500 w-16 text-lg text-white hover:bg-sky-700 hover:shadow-xl active:bg-sky-900">Login</button>
+                    <button type="button" class="rounded-md bg-sky-500 w-20 text-lg text-white hover:bg-sky-700 hover:shadow-xl active:bg-sky-900 mb-6">Register</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <div class="text-center mt-3">
+        <p class="text-md text-gray-300"> Forgot Password or E-mail?
+            <a href="" class="text-md text-gray-300 hover:text-gray-100">click here</a>
+        </p>
+    </div>
+</body>
+<script>
+    var password = document.getElementById("password");
+
+    document.getElementById("make_visibile").onclick = function(){
+
+        password.type === "password"? password.type="text": password.type="password";
+    }; 
+</script>
+</html>
