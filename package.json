@@ -6,8 +6,8 @@
   "scripts": {
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./public/css/style.css --watch",
     "prettier": "npx prettier --write **/*.{ html, js, css }",
-    "start": "node ./src/index.js",
-    "start:dev": "nodemon ./src/index.js"
+    "start": "node ./index.js",
+    "start:dev": "nodemon ./index.js"
   },
   "keywords": [],
   "author": "",
